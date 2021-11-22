@@ -1,19 +1,18 @@
 package com.golightyear.backend.account;
 
+import static com.lightyear.generated.Tables.ACCOUNT;
+import static java.time.ZoneOffset.UTC;
+
 import com.golightyear.backend.account.domain.Account;
 import com.golightyear.backend.account.domain.AccountId;
 import com.golightyear.backend.account.domain.AccountName;
 import com.golightyear.backend.account.domain.AccountState;
 import com.lightyear.generated.tables.records.AccountRecord;
-import org.jooq.DSLContext;
-import org.springframework.stereotype.Component;
-
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
-
-import static com.lightyear.generated.Tables.ACCOUNT;
-import static java.time.ZoneOffset.UTC;
+import org.jooq.DSLContext;
+import org.springframework.stereotype.Component;
 
 @Component
 public class AccountRepositoryJooq implements AccountRepository {

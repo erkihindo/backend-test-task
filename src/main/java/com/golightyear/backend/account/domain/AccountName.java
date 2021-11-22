@@ -1,9 +1,9 @@
 package com.golightyear.backend.account.domain;
 
+import static org.apache.logging.log4j.util.Strings.isBlank;
+
 import com.golightyear.backend.common.SerializableValue;
 import lombok.Value;
-
-import static org.apache.logging.log4j.util.Strings.isBlank;
 
 @Value
 public class AccountName implements SerializableValue<String> {

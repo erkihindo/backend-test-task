@@ -1,14 +1,13 @@
 package com.golightyear.backend.common;
 
+import static java.lang.Math.max;
+import static java.math.RoundingMode.DOWN;
+
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
-
 import java.io.IOException;
 import java.math.BigDecimal;
-
-import static java.lang.Math.max;
-import static java.math.RoundingMode.DOWN;
 
 public class ValueMapKeySerializer extends JsonSerializer<SerializableValue> {
 

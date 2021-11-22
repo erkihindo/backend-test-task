@@ -7,6 +7,8 @@ Before running the application please ensure you have docker installed:
 * Install Docker: https://docs.docker.com/get-docker/
 * Install Docker Compose: https://docs.docker.com/compose/install/
 * *For Windows Only*: You need to set the `DOCKER_HOST` environment variable to `npipe:////./pipe/docker_engine`
+* Install Java 17
+    * https://sdkman.io/jdks
 
 Then:
 
@@ -20,7 +22,7 @@ Then:
 
 ## Testing
 * All tests (unit and integration) share the same test folder `src/test/groovy`.
-* Some tests have been provided as 
+* Some tests have been provided as
 * Run tests with: `./gradlew test`
 
 ### Unit tests

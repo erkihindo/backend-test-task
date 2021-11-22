@@ -1,8 +1,7 @@
 package com.golightyear.backend.config;
 
-import org.springframework.context.annotation.Configuration;
-
 import javax.annotation.PostConstruct;
+import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class JooqConfig {
